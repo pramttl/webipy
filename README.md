@@ -43,11 +43,9 @@ Defining functions
 Add all your python functions to `myfunctions.py`.
 2 example functions are present in the file by default. Called `hello` and `add`.
 
-The arugments to your functions are automatically turned into GET parameters for the
-corresponding web url. Named arugments are only supported as of now.
-
-Variable & Keyword arguments may be used in funciton definitions but are not supported
-inputs to the web endpoint.
+The arugments to your functions are automatically turned into accetable GET parameters for the
+corresponding web url. Only named arguments are supported as of now. Variable & Keyword arguments
+may be used in funciton definitions but are not supported inputs to the web endpoint.
 
 `add` function example:
 
