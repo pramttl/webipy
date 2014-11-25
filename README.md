@@ -1,10 +1,10 @@
-webipy: Automated web app generator for python code
+webipy: Automated web api generator for python code
 ===================================================
 
-Python functions = Functional web endpoints
+Python functions = Functional web api endpoints
 
-Webipy transforms the functions in your python code to a ready to use (django) web app
-with each function having a unique web endpoint.
+Webipy transforms the functions in your python code to a ready to use (django) web api
+with each function getting a unique web endpoint.
 
 
 Introduction
@@ -17,7 +17,7 @@ You need webipy if:
 * You either do not know, do not want to know or do not want to manually write a web app on top of your functions
 
 Webipy helps you define all your python functions in one file i.e `myfunctions.py`.
-A unique url is automatically created for each of the function defined in `myfunctions.py` file that is like:
+A unique url (api endpoint) is automatically created for each of the function defined in `myfunctions.py` file that is like:
 
     '/<your_function_name>/'
 
@@ -55,6 +55,8 @@ may be used in funciton definitions but are not supported inputs to the web endp
 
 Notes:
 
+* The functions must assume inputs in string format. If the input is supposed to be an integer/float
+  first convert it into the respective format using int() or float() built in type functions.
 * Your function defined in `myfunctions.py` must either return a Dictionary, Tuple or List.
 * If you do not want a function to have a web endpoint add an `_` (underscore) prefix to the function name.
 

@@ -12,3 +12,6 @@ def add(a, b):
 def hello():
     return {"output": "Hello world"}
 
+
+def shreyas(x, y):
+    return {"x*y": str(int(x)*int(y))}
